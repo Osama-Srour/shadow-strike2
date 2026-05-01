@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import { useState } from "react";
+import HpBar from './HpBar.js';
 import './App.css';
+import ActionButtons from "./ActionButtons.js";
+import BattleGround from "./BattleGround.js";
+import useGame from "./useGame.js";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const { state, heroAttack, heroHeal, heroDefend } = useGame()
+
+return (
+  <div>
+    <h1>Shadow Strike ⚔️</h1>
+    <BattleGround state={state} player="Hero" />
+    <BattleGround state={state} player="Enemy" />
+    <ActionButtons action={heroAttack} value="⚔️ Attack" />
+    <ActionButtons action={heroHeal} value="💚 Heal" />
+    <ActionButtons action={heroDefend} value="🛡️ Defend" />
+    <p>{state.msg}</p>
+  </div>
+)
+
+
 }
 
 export default App;
