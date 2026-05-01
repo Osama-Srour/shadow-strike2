@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/shadow-strike2/static/css/main.2c8d5d95.css",
+    "main.js": "/shadow-strike2/static/js/main.1fca199e.js",
+    "static/js/453.4c2b9cf6.chunk.js": "/shadow-strike2/static/js/453.4c2b9cf6.chunk.js",
+    "index.html": "/shadow-strike2/index.html",
+    "main.2c8d5d95.css.map": "/shadow-strike2/static/css/main.2c8d5d95.css.map",
+    "main.1fca199e.js.map": "/shadow-strike2/static/js/main.1fca199e.js.map",
+    "453.4c2b9cf6.chunk.js.map": "/shadow-strike2/static/js/453.4c2b9cf6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c8d5d95.css",
+    "static/js/main.1fca199e.js"
+  ]
+}
